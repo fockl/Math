@@ -7,5 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(erfinv erfinv.cpp)
 target_compile_options(erfinv
-  PUBLIC -O0 -Wall
+  PUBLIC -O3 -Wall
   )
