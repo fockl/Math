@@ -7,8 +7,8 @@ println(erfinv(0.99))
 N = 1E8
 
 function main()
-  for i in 1:N
-    erfinv((i-1)/N)
+  for i in 0:N-1
+    erfinv(i/N)
   end
 end
 
