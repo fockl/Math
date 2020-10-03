@@ -1,3 +1,13 @@
+// Reference : Specialfunctions.jl (https://github.com/JuliaMath/SpecialFunctions.jl/blob/6b686c0d6544a1e0ca59b627f22ea5559ba03e40/src/erf.jl)
+/* Compute the inverse of the error function: erf(erfinv(x)) == x,
+ using the rational approximants tabulated in:
+     J. M. Blair, C. A. Edwards, and J. H. Johnson, "Rational Chebyshev
+     approximations for the inverse of the error function," Math. Comp. 30,
+     pp. 827--830 (1976).
+         http://dx.doi.org/10.1090/S0025-5718-1976-0421040-7
+         http://www.jstor.org/stable/2005402
+*/
+
 #include<stdio.h>
 #include<math.h>
 #include<chrono>
