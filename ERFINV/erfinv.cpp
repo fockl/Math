@@ -43,7 +43,7 @@ inline double table57(
 }
 
 inline double erfinv(double x){
-  double a = abs(x);
+  double a = fabs(x);
   if(a>=1.0){
     return -1.0;
   }else if(a<=0.75){
